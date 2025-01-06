@@ -1,0 +1,90 @@
+/*
+Theme Name: Advanced Futuristic Barber Shop
+Theme URI: https://example.com
+Author: Bolt
+Author URI: https://example.com
+Description: An advanced futuristic barber shop theme with enhanced SEO features.
+Version: 1.2.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: futuristic-barber-shop
+Tags: barber, shop, business, SEO, futuristic
+*/
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #ff6347;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --dark-background-color: #121212;
+  --dark-text-color: #e0e0e0;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  background-color: #444;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.dark-mode {
+  background-color: var(--dark-background-color);
+  color: var(--dark-text-color);
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}

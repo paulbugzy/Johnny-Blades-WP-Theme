@@ -1,0 +1,15 @@
+&lt;!DOCTYPE html&gt;
+&lt;html &lt;?php language_attributes(); ?&gt;&gt;
+&lt;head&gt;
+  &lt;meta charset="&lt;?php bloginfo( 'charset' ); ?&gt;"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;?php wp_head(); ?&gt;
+&lt;/head&gt;
+&lt;body &lt;?php body_class(); ?&gt;&gt;
+  &lt;header&gt;
+    &lt;h1&gt;&lt;a href="&lt;?php echo esc_url( home_url( '/' ) ); ?&gt;"&gt;&lt;?php bloginfo( 'name' ); ?&gt;&lt;/a&gt;&lt;/h1&gt;
+    &lt;p&gt;&lt;?php bloginfo( 'description' ); ?&gt;&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;nav&gt;
+    &lt;?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?&gt;
+  &lt;/nav&gt;

@@ -1,0 +1,132 @@
+/*
+Theme Name: Johnny Blades Haircuts
+Theme URI: https://johnnybladescuts.com
+Author: Paul Youhanna
+Author URI: https://rockethosted.com
+Description: A secure and optimized futuristic barber shop theme with enhanced SEO and accessibility features.
+Version: 1.5.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: johnny-blades-haircuts
+Tags: barber, shop, business, SEO, futuristic
+*/
+
+:root {
+  --primary-red: #d9021b;
+  --primary-blue: #315a9c;
+  --primary-silver: #dfdfdf;
+  --dark-blue: #243b6b;
+  --light-silver: #f5f5f5;
+  --dark-red: #a50115;
+  --white: #ffffff;
+  --black: #000000;
+  --font-heading: 'Rajdhani', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-silver);
+  color: var(--dark-blue);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  background-color: var(--primary-red);
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--primary-silver);
+}
+
+footer {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.button {
+  background-color: var(--primary-red);
+  color: var(--white);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: var(--dark-red);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  margin-bottom: 10px;
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode {
+  background-color: var(--dark-blue);
+  color: var(--primary-silver);
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .mobile-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .button {
+    flex: 1;
+    margin: 5px;
+  }
+}
